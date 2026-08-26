@@ -1,0 +1,22 @@
+# Dependabot — GitHub Actions only.
+#
+# This repository carries no package manifest, so the only third-party code it
+# executes is the actions its workflows pin. Those pins are exactly what must
+# not go stale: a workflow's `uses:` reference is a code-execution path, and an
+# unpinned or outdated action on a runner that also builds other repositories
+# is an escalation path rather than a hygiene issue.
+#
+# Version updates are LIVE. If they are ever paused, set the expiry date and an
+# owner in this comment in the SAME edit — a pause with no expiry is
+# indistinguishable from an outage.
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:00"
+      timezone: America/Chicago
+    open-pull-requests-limit: 5
