@@ -4,18 +4,18 @@ cask "nightgauge" do
 
   on_macos do
     on_intel do
-      sha256 "f076f2cfd35c4e65ec6b0d41db4112cb874eddd3081596d1aa32fdab7cb6edb7"
+      sha256 "9c522345961ba6331e1fe631399b4f8a93a23e5453c6e80664d8b01d6c9ba903"
       url "https://github.com/nightgauge/nightgauge/releases/download/v#{version}/nightgauge_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "06f71dd03ab407f1815670874c622d196f3e1afb00e6a05105bb2c42b704c91b"
+      sha256 "3c2405dffd07bb17ba7d8c0d3ed07581b756e9d73bd52844524def477514e599"
       url "https://github.com/nightgauge/nightgauge/releases/download/v#{version}/nightgauge_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "a8e306e472822263c6aceb20c34033afc22d529b578365f2edf8aaced8b0cd86"
+      sha256 "18b6861a1bd362a445e60799cf1cac1b1edcb6b39356a5e189e5e01b3ecea5e3"
       url "https://github.com/nightgauge/nightgauge/releases/download/v#{version}/nightgauge_#{version}_linux_amd64.tar.gz"
     end
   end
